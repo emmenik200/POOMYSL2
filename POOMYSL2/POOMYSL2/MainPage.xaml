@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="POOMYSL2.MainPage">
+
+    <StackLayout Padding="0, 20, 0, 0">
+       
+        <Label Text="Samochód Marzeń" FontSize="Title" />
+
+        <Image Source="automarzen.jpg"/>
+
+        <Grid BackgroundColor="Teal">
+            <Button Grid.Row="0" Grid.Column="0" Text="POLUB" x:Name="polub" BackgroundColor="Teal" TextColor="White" HorizontalOptions="Start" Clicked="Polub"></Button>
+            <Button Grid.Row="0" Grid.Column="1" Text="USUŃ" x:Name="usun" BackgroundColor="Teal" TextColor="White" HorizontalOptions="Start" Clicked="Usun" ></Button>
+            <Button Grid.Row="0" Grid.Column="2" Text="ZAPISZ"  BackgroundColor="Teal" TextColor="White" HorizontalOptions="Start"  ></Button>
+
+
+        </Grid>
+
+        <Label Text="0 Polubień" x:Name="ilosc" HorizontalOptions="End"></Label>
+        <BoxView HeightRequest="1" BackgroundColor="Gray"></BoxView>
+        
+        <Label Text="Opis" FontAttributes="Bold" FontSize="Large"></Label>
+        <Label Text="Hyundai i20 POMYSL2 to prawdziwy mistrz miejskich dróg: kompaktowy, stylowy i zawsze gotowy do działania. Ten dynamiczny maluch nie tylko wygląda świetnie, ale i zapewnia doskonały komfort jazdy – POMYSL2 to najlepszy wybór! Zwinny, niezawodny i pełen charakteru – Hyundai i20 z rejestracją POMYSL2 to symbol dobrej decyzji i miejskiego szyku."></Label>
+        
+    </StackLayout>
+
+</ContentPage>
+
